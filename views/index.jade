@@ -1,5 +1,6 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Images
+  each image in images
+    img(src=`/images/${image}` width='200' height='200')
